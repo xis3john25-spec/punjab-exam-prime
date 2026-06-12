@@ -199,11 +199,11 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 gradient-hero" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,oklch(0.45_0.15_50/0.25),transparent_60%)]" />
+    <section id="top" className="relative isolate overflow-hidden">
+      <div className="absolute inset-0 z-0 gradient-hero" />
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top,oklch(0.45_0.15_50/0.25),transparent_60%)]" />
 
-      <div className="container-x grid items-center gap-10 py-14 md:gap-14 md:py-24 lg:grid-cols-[1.05fr_1fr] lg:py-28">
+      <div className="container-x relative z-10 grid items-center gap-10 py-14 md:gap-14 md:py-24 lg:grid-cols-[1.05fr_1fr] lg:py-28">
         {/* Copy */}
         <div className="relative animate-fade-up text-white">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-semibold backdrop-blur">
